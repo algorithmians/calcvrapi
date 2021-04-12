@@ -1,0 +1,234 @@
+// Components
+.clv-spacer {
+  display: block;
+  height: 1px;
+  width: 100%;
+}
+
+.clv-btn-left-fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.clv-btn-goto-form {
+  .clv-btn-text {
+    transform: rotate(-90deg);
+    display: inline-block;
+  }
+}
+
+//Forms
+input {
+  border-top-color: transparent !important;
+  border-left-color: transparent !important;
+  border-right-color: transparent !important;
+  border-bottom-width: $border-width !important;
+
+  &:focus,
+  &:active {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: $primary !important;
+  }
+}
+
+.clv-input-dropdown-wrapper[aria-expanded="true"] {
+  .clv-input-dropdown {
+    +span {
+      &:after {
+        content: "";
+        background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/></svg>") !important;
+      }
+    }
+  }
+}
+
+.clv-input-dropdown {
+  +span {
+    &:after {
+      display: inline-block;
+      content: "";
+      vertical-align: bottom;
+      background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+      background-repeat: no-repeat;
+      background-size: 1rem 1rem;
+      position: absolute;
+      right: 5px;
+      top: 10px;
+      width: 20px;
+      height: 30px;
+    }
+  }
+}
+
+.dropdown-menu {
+  width: 100%;
+  margin-top: 6px !important;
+}
+
+// Input Lines
+//
+// Wrapper for all input line
+.clv-input-line-wrapper {
+  color: $gray-500;
+
+  &:hover,
+  &.active,
+  &.completed {
+    color: $primary;
+  }
+
+  p,
+  div.dropdown,
+  .form-group,
+  form {
+    display: inline-block;
+  }
+}
+
+// Payment Services List
+//
+
+// Payment Service Item
+.clv-payment-service-item {
+  border: 1px solid $primary;
+  position: relative;
+
+  .clv-save-amount {
+    font-size: 12px;
+  }
+
+  .clv-payment-service-name {
+    position: absolute;
+    top: -16px;
+    left: 15px;
+    padding: 4px 16px;
+    background-color: $white;
+  }
+}
+
+
+// Comparator List
+.clv-comparator-psp-wrapper {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+}
+
+.clv-comparator-psp-item {
+  display: inline-block;
+  padding: 24px 16px;
+  font-size: 14px;
+  min-height: 100vh;
+  
+  &.titles {
+    background-color: $gray-100;
+    width: 210px;
+  }
+
+  &.psp {
+    width: 116px;
+  }
+
+  &:nth-child(odd) {
+    background-color: $gray-100;
+  }
+
+  &:nth-child(even) {
+    background-color: $gray-200;
+  }
+
+  .clv-psp-list {
+    margin-bottom: 24px;
+  }
+
+  .clv-comparator-psp-header {
+    height: 110px;
+    position: relative;
+    padding-bottom: 20px;
+
+    .clv-comparator-psp-pin {
+      position: absolute;
+      top: 0;
+      right: 0;
+      opacity: 0;
+    }
+  }
+
+  .clv-list-title {
+    min-height: 12px;
+    margin-bottom: 12px;
+
+    h6 {
+      text-transform: uppercase;
+      font-size: 10px;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+  }
+
+  .clv-comparator-list-item {
+
+    .clv-comparator-list-item-header {
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+
+    .clv-comparator-list-item-price {
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+
+    .ticket-medio {
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+
+  &:hover {
+    .clv-comparator-psp-pin {
+      opacity: 1;
+    }
+  }
+
+  /*
+  &.not-pinned {
+    background-color: $gray-100;
+    width: 430px;
+    right: 160px;
+  }
+
+  &.pinned {
+    width: 310px;
+
+    .clv-comparator-psp-header {
+      justify-content: flex-end !important;
+    }
+
+    .clv-comparator-psp-close {
+      display: none;
+    }
+  }
+
+  &.pinned-small {
+    width: 160px;
+    background-color: $gray-200;
+
+    .clv-comparator-psp-header {
+      justify-content: flex-end !important;
+    }
+
+    .clv-comparator-psp-close,
+    .clv-comparator-list-item-header {
+      display: none;
+    }
+  }
+  */
+}
