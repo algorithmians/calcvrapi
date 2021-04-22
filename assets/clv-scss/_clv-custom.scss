@@ -22,6 +22,10 @@
   }
 }
 
+.form-check-input {
+  border: 1px solid $primary !important;
+}
+
 //Forms
 input {
   border-top-color: transparent !important;
@@ -34,6 +38,11 @@ input {
     outline: none !important;
     box-shadow: none !important;
     border-color: $primary !important;
+  }
+
+  &.is-invalid,
+  &.is-valid {
+    background-image: none !important;
   }
 }
 
@@ -49,6 +58,8 @@ input {
 }
 
 .clv-input-dropdown {
+  padding-right: 24px;
+
   +span {
     &:after {
       display: inline-block;
@@ -67,20 +78,42 @@ input {
 }
 
 .dropdown-menu {
-  width: 100%;
+  width: auto;
+  min-width: 100%;
   margin-top: 6px !important;
+}
+
+// Home
+//
+
+// TPV List Logo
+.clv-tpv-list-logo {
+  li {
+    margin-right: 16px;
+  }
+
+  li img {
+    height: 42px;
+    opacity: 0.3;
+  }
 }
 
 // Input Lines
 //
 // Wrapper for all input line
 .clv-input-line-wrapper {
-  color: $gray-500;
+  /*color: $gray-500;
 
   &:hover,
   &.active,
   &.completed {
     color: $primary;
+  }*/
+
+  input[type="text"],
+  input[type="search"] {
+    width: 190px;
+    max-width: auto;
   }
 
   p,
@@ -90,6 +123,11 @@ input {
     display: inline-block;
   }
 }
+.clv-optional-filters {
+  border-left: 1px dashed $gray-500;
+  padding-left: 30px;
+}
+
 
 // Payment Services List
 //

@@ -27,8 +27,8 @@
   <body>
 
   <header class="navbar flex-md-nowrap py-4">
-      <div class="col-sm-11 offset-sm-1">
-        <img class="mb-4" src="assets/img/logo-calcvrapi.png" width="170px">
+      <div class="col-sm-11 offset-sm-1 py-2">
+        <a href="/calcvrapi"><img class="mb-4" src="assets/img/logo-calcvrapi.png" width="170px"></a>
       </div>
   </header>
 
@@ -41,16 +41,16 @@
             <!-- Input Tipo Comercio -->
             <p>Tengo un</p>
             <div class="dropdown">
-            <span class="clv-input-dropdown-wrapper" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="clv-input-dropdown-wrapper" href="#" role="button" id="dropdownTipoComercio" data-bs-toggle="dropdown" aria-expanded="false">
               <form>
-                <input type="search" class="form-control clv-input-dropdown" id="searchCoin" placeholder="ecommerce" autofocus="autofocus"><span></span>
+                <input type="search" class="form-control clv-input-dropdown" id="searchTipoComercio" placeholder="ecommerce" value="" autofocus="autofocus"><span></span>
               </form>
             </span>
 
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <ul class="dropdown-menu" aria-labelledby="dropdownTipoComercio">
+                <li><a class="dropdown-item active" href="#">ecommerce</a></li>
+                <li><a class="dropdown-item" href="#">marketplace</a></li>
+                <li><a class="dropdown-item" href="#">hotel</a></li>
               </ul>
             </div>
           </div>
@@ -59,7 +59,7 @@
             <!-- Input Que Vende -->
             <p>, que vende</p>
             <form>
-              <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+              <input class="form-control" type="text" placeholder="camisetas" aria-label="que vende">
             </form>
             <p>.</p>
           </div>
@@ -71,16 +71,17 @@
             <!-- Input Tipo Comercio -->
             <p>Vendo online desde</p>
             <div class="dropdown">
-            <span class="clv-input-dropdown-wrapper" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="clv-input-dropdown-wrapper" href="#" role="button" id="dropdownVendoDesde" data-bs-toggle="dropdown" aria-expanded="false">
               <form>
-                <input type="search" class="form-control clv-input-dropdown" id="searchCoin" placeholder="España" autofocus="autofocus"><span></span>
+                <input type="search" class="form-control clv-input-dropdown" id="searchVendoDesde" placeholder="España" value="España" autofocus="autofocus"><span></span>
               </form>
             </span>
 
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <ul class="dropdown-menu" aria-labelledby="dropdownVendoDesde">
+                <li><a class="dropdown-item active" href="#">España</a></li>
+                <li><a class="dropdown-item" href="#">Portugal</a></li>
+                <li><a class="dropdown-item" href="#">Brasil</a></li>
+                <li><a class="dropdown-item" href="#">Ecuador</a></li>
               </ul>
             </div>
           </div>
@@ -91,14 +92,51 @@
             <div class="dropdown">
             <span class="clv-input-dropdown-wrapper" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
               <form>
-                <input type="search" class="form-control clv-input-dropdown" id="searchCoin" placeholder="España" autofocus="autofocus"><span></span>
+                <input type="search" class="form-control clv-input-dropdown" id="searchCoin" placeholder="Europa" value="Europa" autofocus="autofocus"><span></span>
               </form>
             </span>
 
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Europa
+                    </label>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      America del Norte
+                    </label>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      America del Sur
+                    </label>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Asia
+                    </label>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Africa
+                    </label>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -117,9 +155,46 @@
             </span>
 
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      España
+                    </label>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Portugal
+                    </label>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Brasil
+                    </label>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Ecuador
+                    </label>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Argentina
+                    </label>
+                  </a>
+                </li>
               </ul>
             </div>
             <p>.</p>
@@ -127,7 +202,7 @@
         </div>
 
         <!-- Spacer -->
-        <span class="clv-spacer my-3"></span>
+        <span class="clv-spacer my-2"></span>
 
         <!-- Input Line -->
         <div class="clv-input-line-wrapper">
@@ -137,19 +212,19 @@
             <div class="form-group">
               <div class="form-group">
                 <div class="input-group mb-3">
-                  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                  <input type="text" class="form-control" aria-label="Cantidad" placeholder="0" value="" style="width: 80px;">
                   <div class="input-group-append">
                     <div class="dropdown">
-                      <span class="clv-input-dropdown-wrapper" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="clv-input-dropdown-wrapper" href="#" role="button" id="dropdownTicketMedioCurrency" data-bs-toggle="dropdown" aria-expanded="false">
                         <form>
-                          <input type="search" class="form-control clv-input-dropdown" id="searchCoin" placeholder="€" autofocus="autofocus"><span></span>
+                          <input type="search" class="form-control clv-input-dropdown" id="searchTicketMedioCurrency" placeholder="€" autofocus="autofocus" value="€" style="width: 70px;"><span></span>
                         </form>
                       </span>
 
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownTicketMedioCurrency">
+                        <li><a class="dropdown-item active" href="#">Euro - €</a></li>
+                        <li><a class="dropdown-item" href="#">Dolar - $</a></li>
+                        <li><a class="dropdown-item" href="#">Pound - £</a></li>
                       </ul>
                     </div>
                   </div>
@@ -166,30 +241,30 @@
             <!-- Input Tipo Comercio -->
             <p>Cobro en</p>
             <div class="dropdown">
-            <span class="clv-input-dropdown-wrapper" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-              <form>
-                <input type="search" class="form-control clv-input-dropdown" id="searchCoin" placeholder="España" autofocus="autofocus"><span></span>
-              </form>
-            </span>
+              <span class="clv-input-dropdown-wrapper" href="#" role="button" id="dropdownCobroCurrency" data-bs-toggle="dropdown" aria-expanded="false">
+                <form>
+                  <input type="search" class="form-control clv-input-dropdown" id="searchCobroCurrency" placeholder="€" value="€" autofocus="autofocus" style="width: 80px"><span></span>
+                </form>
+              </span>
 
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <ul class="dropdown-menu" aria-labelledby="dropdownCobroCurrency">
+                <li><a class="dropdown-item active" href="#">Euro - €</a></li>
+                <li><a class="dropdown-item" href="#">Dolar - $</a></li>
+                <li><a class="dropdown-item" href="#">Pound - £</a></li>
               </ul>
             </div>
             <p> y recibo </p>
             <div class="dropdown">
-            <span class="clv-input-dropdown-wrapper" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-              <form>
-                <input type="search" class="form-control clv-input-dropdown" id="searchCoin" placeholder="España" autofocus="autofocus"><span></span>
-              </form>
-            </span>
+              <span class="clv-input-dropdown-wrapper" href="#" role="button" id="dropdownReciboCurrency" data-bs-toggle="dropdown" aria-expanded="false">
+                <form>
+                  <input type="search" class="form-control clv-input-dropdown" id="searchReciboCurrency" placeholder="€" value="€" autofocus="autofocus" style="width: 80px"><span></span>
+                </form>
+              </span>
 
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <ul class="dropdown-menu" aria-labelledby="dropdownReciboCurrency">
+                <li><a class="dropdown-item active" href="#">Euro - €</a></li>
+                <li><a class="dropdown-item" href="#">Dolar - $</a></li>
+                <li><a class="dropdown-item" href="#">Pound - £</a></li>
               </ul>
             </div>
             <p>en mi cuenta.</p>
@@ -197,27 +272,26 @@
         </div>
 
         <!-- Spacer -->
-        <span class="clv-spacer my-3"></span>
+        <span class="clv-spacer mt-2 mb-3"></span>
 
         <!-- Filtros opcionales -->
-        <div class="clv-optinal-filters">
+        <div class="clv-optional-filters">
 
           <!-- Input Line -->
           <div class="clv-input-line-wrapper">
-            <div class="d-inline-block">
+            <div class="d-inline-block text-black-50">
               <!-- Input Tipo Comercio -->
               <p>¿Guardas los datos de tarjeta de tus clientes?</p>
               <div class="dropdown">
-                <span class="clv-input-dropdown-wrapper" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="clv-input-dropdown-wrapper" href="#" role="button" id="dropdownGuardarTarjetaClientes" data-bs-toggle="dropdown" aria-expanded="false">
                   <form>
-                    <input type="search" class="form-control clv-input-dropdown" id="searchCoin" placeholder="España" autofocus="autofocus"><span></span>
+                    <input type="search" class="form-control clv-input-dropdown" id="searchGuardarTarjetaClientes" placeholder="" value="" autofocus="autofocus" style="width: 90px"><span></span>
                   </form>
                 </span>
 
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <ul class="dropdown-menu" aria-labelledby="dropdownGuardarTarjetaClientes">
+                  <li><a class="dropdown-item" href="#">Si</a></li>
+                  <li><a class="dropdown-item" href="#">No</a></li>
                 </ul>
               </div>
             </div>
@@ -225,32 +299,34 @@
 
           <!-- Input Line -->
           <div class="clv-input-line-wrapper">
-            <div class="d-inline-block">
+            <div class="d-inline-block text-black-50">
               <!-- Input Tipo Comercio -->
               <p>¿Qué sistema usas en tu tienda?</p>
               <div class="dropdown">
-                <span class="clv-input-dropdown-wrapper" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="clv-input-dropdown-wrapper" href="#" role="button" id="dropdownSistemaTienda" data-bs-toggle="dropdown" aria-expanded="false">
                   <form>
-                    <input type="search" class="form-control clv-input-dropdown" id="searchCoin" placeholder="España" autofocus="autofocus"><span></span>
+                    <input type="search" class="form-control clv-input-dropdown" id="searchSistemaTienda" placeholder="" value="" autofocus="autofocus"><span></span>
                   </form>
                 </span>
 
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <ul class="dropdown-menu" aria-labelledby="dropdownSistemaTienda">
+                  <li><a class="dropdown-item" href="#">Woocommerce</a></li>
+                  <li><a class="dropdown-item" href="#">Shopify</a></li>
+                  <li><a class="dropdown-item" href="#">Magento</a></li>
+                  <li><a class="dropdown-item" href="#">Customizado</a></li>
+                  <li><a class="dropdown-item" href="#">Otro</a></li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
 
-        <a href="/calcvrapi/comparator.html" type="button" class="btn btn-primary mt-7 px-4">calcular</a>
+        <a href="/calcvrapi/comparator.html" type="button" aria-disabled="true" class="btn btn-primary mt-6 px-4 disabled" area-disabled="true">calcular</a>
       </div>
   </div>
 
   <footer>
-    <div class="container-fluid">
+    <div class="container-fluid pb-3">
       <div class="row">
         <div class="col-sm-5 offset-1">
           <a href="#">+ info</a>
